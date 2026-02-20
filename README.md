@@ -1,1 +1,1 @@
-# leetcode-DSA-solution
+# leetcode-solution
