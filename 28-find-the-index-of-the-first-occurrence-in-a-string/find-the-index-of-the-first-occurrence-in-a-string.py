@@ -2,12 +2,12 @@ class Solution(object):
     def strStr(self, haystack, needle):
         """
         Time Complexity (TC): O(n * m)
-        - n = length of haystack
-        - m = length of needle
-        - In worst case, we compare m characters at each position in haystack.
+         n = length of haystack
+         m = length of needle
+         In worst case, we compare m characters at each position in haystack
 
         Space Complexity (SC): O(1)
-        - No extra space used (constant space).
+         No extra space used (constant space).
         """
         
         n = len(haystack)
