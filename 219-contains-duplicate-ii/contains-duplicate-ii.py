@@ -1,0 +1,17 @@
+class Solution(object):
+    def containsNearbyDuplicate(self, nums, k):
+        """
+        Time Complexity TC O n
+        Space Complexity SC O n
+        """
+        
+        index_map = {}
+        
+        for i in range(len(nums)):
+            if nums[i] in index_map:
+                if i - index_map[nums[i]] <= k:
+                    return True
+            
+            index_map[nums[i]] = i
+        
+        return False
