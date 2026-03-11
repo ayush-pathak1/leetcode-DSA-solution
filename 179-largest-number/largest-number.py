@@ -3,7 +3,7 @@
 
 from functools import cmp_to_key
 
-class Solution:
+class Solution(object):
     def largestNumber(self, nums):
         
         nums = list(map(str, nums))
