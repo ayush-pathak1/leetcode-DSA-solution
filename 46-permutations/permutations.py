@@ -12,6 +12,6 @@ class Solution(object):
                     path + [remaining[i]],
                     remaining[:i] + remaining[i+1:]
                 )
-
+                
         backtrack([], nums)
         return result
