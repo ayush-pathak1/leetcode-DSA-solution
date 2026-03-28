@@ -1,23 +1,22 @@
-# Time Complexity  : O(n)
+# Time Complexity  : O(n log n)
 # Space Complexity : O(1)
 
 class Solution:
     def findDuplicate(self, nums):
-        
-        # Phase 1: Cycle detect karo
-        slow = nums[0]
-        fast = nums[0]
-        
-        while True:
-            slow = nums[slow]
-            fast = nums[nums[fast]]
-            if slow == fast:
-                break
+        low = 1
+        high = len(nums) - 1
 
-        slow = nums[0]
-        
-        while slow != fast:
-            slow = nums[slow]
-            fast = nums[fast]
-        
-        return slow
+        while low < high:
+            mid = (low + high) // 2
+            count = 0
+
+            for n in nums:
+                if n <= mid:
+                    count += 1
+
+            if count > mid:
+                high = mid
+            else:
+                low = mid + 1
+
+        return low
