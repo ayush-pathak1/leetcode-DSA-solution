@@ -1,5 +1,4 @@
-# Problem: Palindrome Number
-# Pattern: Math (Reverse Half)
+# Pattern: Math Reverse Half
 # Time Complexity: O(log n)
 # Space Complexity: O(1)
 
@@ -13,5 +12,4 @@ class Solution:
         while x > reversed_half:
             reversed_half = reversed_half * 10 + x % 10
             x //= 10
-        
         return x == reversed_half or x == reversed_half // 10
