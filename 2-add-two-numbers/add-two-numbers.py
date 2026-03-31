@@ -1,4 +1,3 @@
-# Problem: Add Two Numbers
 # Pattern: Linked List + Simulation
 # Time Complexity: O(max(n, m))
 # Space Complexity: O(max(n, m))
