@@ -1,4 +1,3 @@
-# Problem: Two Sum
 # Pattern: Sorting + Two Pointers
 # Time Complexity: O(n log n)
 # Space Complexity: O(n)
