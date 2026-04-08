@@ -1,5 +1,5 @@
-# Time Complexity: O(2^n) (exploring subsets using backtracking)
-# Space Complexity: O(n) recursion stack + path storage
+# Time Complexity: O(2^n)
+# Space Complexity: O(n)
 
 class Solution:
     def combinationSum2(self, candidates, target):
