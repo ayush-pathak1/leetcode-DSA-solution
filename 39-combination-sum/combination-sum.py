@@ -1,5 +1,5 @@
-# Time Complexity: O(2^target) approx (exploring many combinations using recursion)
-# Space Complexity: O(target) for recursion stack and storing current combination
+# Time Complexity: O(2^target)
+# Space Complexity: O(target)
 
 class Solution:
     def combinationSum(self, candidates, target):
