@@ -9,7 +9,7 @@ class Solution:
         carry = 0
 
         while l1 or l2 or carry: 
-            carry += (l1.val if l1 else 0) + (l2.val if l2 else 0)
+            carry += (l1.val if l1 else  0) + (l2.val if l2 else 0)
             tail.next = ListNode(carry % 10)
             tail = tail.next
             carry //= 10
