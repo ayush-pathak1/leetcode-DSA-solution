@@ -1,5 +1,3 @@
-# Problem: Longest Common Prefix
-# Pattern: String Processing (Horizontal Scanning)
 # Time Complexity: O(n * m)
 # Space Complexity: O(1)
 
