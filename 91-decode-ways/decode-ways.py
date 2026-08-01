@@ -1,0 +1,28 @@
+# Time Complexity: O(n)
+# Space Complexity: O(1)
+
+class Solution(object):
+    def numDecodings(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        if not s or s[0] == '0':
+            return 0
+
+        prev2 = 1
+        prev1 = 1
+
+        for i in range(1, len(s)):
+            curr = 0
+
+            if s[i] != '0':
+                curr += prev1
+
+            if "10" <= s[i - 1:i + 1] <= "26":
+                curr += prev2
+
+            prev2 = prev1
+            prev1 = curr
+
+        return prev1
