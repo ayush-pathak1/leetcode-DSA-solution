@@ -13,7 +13,6 @@ class Solution(object):
 
         if m + n != len(s3):
             return False
-
         dp = [False] * (n + 1)
         dp[0] = True
 
