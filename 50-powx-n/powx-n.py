@@ -7,7 +7,6 @@ class Solution:
         result = 1
         
         while power > 0:
-            
             if power % 2 == 1:
                 result = result * x
             
