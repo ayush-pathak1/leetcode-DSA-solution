@@ -13,7 +13,6 @@ class Solution(object):
 
             while left < right:
                 total = nums[i] + nums[left] + nums[right]
-
                 if total == 0:
                     res.append([nums[i], nums[left], nums[right]])
                     left += 1
