@@ -14,15 +14,10 @@ class Solution(object):
             slow = slow.next
             fast = fast.next.next
             
-        # Split the list into two halves
         mid = slow.next
         slow.next = None
-        
-        # 2. Recursively sort both halves
         left = self.sortList(head)
         right = self.sortList(mid)
-        
-        # 3. Merge two sorted lists
         return self.merge(left, right)
     
     def merge(self, l1, l2):
